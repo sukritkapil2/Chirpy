@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "521127926644",
+    "firebase_url": "https://wingly-145fe.firebaseio.com",
+    "project_id": "wingly-145fe",
+    "storage_bucket": "wingly-145fe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:521127926644:android:cc30df904f70df9b25ea21",
+        "android_client_info": {
+          "package_name": "com.example.wingly"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "521127926644-dfi5ts6qb6gnqtbpds09cqffi1su4vqn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.wingly",
+            "certificate_hash": "ce10343050560064c9e20409ad6fed62c243536e"
+          }
+        },
+        {
+          "client_id": "521127926644-p16s87haa1es6p1d610nmb74krbs34o0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwkpL-ArPwYnXEDZj8vQLDtAaNalmmbDA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "521127926644-p16s87haa1es6p1d610nmb74krbs34o0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
