@@ -6,4 +6,65 @@
     android:layout_height="match_parent"
     tools:context=".JoinNest">
 
+    <EditText
+        android:id="@+id/nest_name2"
+        android:layout_width="282dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/custom_edit"
+        android:ems="10"
+        android:fontFamily="@font/roboto"
+        android:hint="Creator Email"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/gabriela"
+        android:text="Enter Credentials to Join"
+        android:textColor="#F6A519"
+        android:textFontWeight="600"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></androidx.appcompat.widget.AppCompatTextView>
+
+    <EditText
+        android:id="@+id/passcode2"
+        android:layout_width="282dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/custom_edit"
+        android:ems="10"
+        android:fontFamily="@font/roboto"
+        android:hint="Nest Passcode"
+        android:inputType="textShortMessage|textPersonName|textPassword|textEmailAddress"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nest_name2" />
+
+    <Button
+        android:id="@+id/join_nest"
+        android:layout_width="166dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/desbtn"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Join Nest"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passcode2" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

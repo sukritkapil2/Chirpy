@@ -11,14 +11,14 @@
         android:id="@+id/appCompatTextView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="224dp"
+        android:layout_marginTop="168dp"
         android:fontFamily="@font/gabriela"
         android:text="Nest Name"
         android:textColor="#F6A519"
         android:textFontWeight="600"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"></androidx.appcompat.widget.AppCompatTextView>
 
@@ -29,6 +29,7 @@
         android:layout_marginTop="24dp"
         android:background="@drawable/custom_edit"
         android:ems="10"
+        android:padding="10dp"
         android:fontFamily="@font/roboto"
         android:hint="Nest Name"
         android:inputType="textPersonName"
@@ -37,11 +38,27 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appCompatTextView2" />
 
+    <EditText
+        android:id="@+id/passcode"
+        android:layout_width="282dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/custom_edit"
+        android:ems="10"
+        android:fontFamily="@font/roboto"
+        android:hint="Nest Passcode"
+        android:inputType="textShortMessage|textPersonName|textPassword|textEmailAddress"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nest_name" />
+
     <Button
         android:id="@+id/make_nest"
         android:layout_width="166dp"
         android:layout_height="42dp"
-        android:layout_marginTop="108dp"
+        android:layout_marginTop="52dp"
         android:background="@drawable/desbtn"
         android:fontFamily="@font/roboto_medium"
         android:text="Make Nest"
@@ -50,6 +67,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nest_name" />
+        app:layout_constraintTop_toBottomOf="@+id/passcode" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
