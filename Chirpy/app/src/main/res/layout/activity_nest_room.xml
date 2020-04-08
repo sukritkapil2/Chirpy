@@ -4,9 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NestRoom">
+    tools:context=".NestRoom"
+    android:background="#F6F3E8">
 
     <RelativeLayout
+        android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -14,54 +16,73 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
+            android:id="@+id/nest_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/gabriela"
             android:text="Nest Name"
             android:textColor="#F6A519"
-            android:id="@+id/nest_name"
-            android:textSize="26sp"
-            android:fontFamily="@font/gabriela"
-            android:layout_marginTop="12dp"
-            android:layout_marginStart="10dp"
-            ></TextView>
+            android:textSize="26sp"></TextView>
 
         <TextView
             android:id="@+id/creator"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="By Creator"
-            android:textSize="20sp"
-            android:fontFamily="@font/gabriela"
-            android:textColor="#F6A519"
-            android:layout_toRightOf="@id/nest_name"
             android:layout_marginStart="60dp"
-            android:layout_marginTop="15dp"></TextView>
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@id/nest_name"
+            android:fontFamily="@font/gabriela"
+            android:text="By Creator"
+            android:textColor="#F6A519"
+            android:textSize="12sp"></TextView>
+
+        <ImageButton
+            android:id="@+id/leave"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/creator"
+            android:background="@drawable/desbtn"
+            app:srcCompat="@drawable/ic_exit_to_app_white_48dp" />
 
     </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintVertical_bias="0.0"
+        android:background="@drawable/ic_group_4"
+        tools:layout_editor_absoluteX="0dp"></androidx.recyclerview.widget.RecyclerView>
 
     <EditText
         android:id="@+id/editText"
         android:layout_width="308dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="36dp"
         android:background="@drawable/custom_edit"
         android:ems="10"
         android:hint="Message"
-        android:padding="10dp"
         android:inputType="textPersonName"
+        android:padding="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageButton"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.38"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="60dp"
-        android:layout_height="57dp"
+        android:layout_width="45dp"
+        android:layout_height="46dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="36dp"
-        android:background="@drawable/desbtn"
-        android:layout_marginStart="10dp"
+        android:background="#F6A519"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/ic_send_white_48dp" />

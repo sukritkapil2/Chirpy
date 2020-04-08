@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="8dp">
+<androidx.cardview.widget.CardView android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:id="@+id/card"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:maxWidth="100dp"
+    app:cardBackgroundColor="#f79862"
+    app:cardCornerRadius="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:orientation="vertical"
+        android:layout_gravity="right">
+
+        <TextView
+            android:id="@+id/name"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"></TextView>
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message"
+            android:textColor="#fff"
+            android:fontFamily="@font/roboto"
+            android:textSize="16sp"></TextView>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time Sent"
+            android:textSize="8dp"
+            android:textColor="#fff"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/roboto"></TextView>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+</RelativeLayout>

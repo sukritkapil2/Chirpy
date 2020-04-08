@@ -15,6 +15,7 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
 
@@ -66,6 +67,11 @@ public class JoinNest extends AppCompatActivity {
                                         Intent intent = new Intent(JoinNest.this, NestRoom.class);
                                         intent.putExtra("NEST_NAME", documentSnapshot.get("name").toString());
                                         intent.putExtra("CREATOR", documentSnapshot.get("creatorName").toString());
+                                        intent.putExtra("NEST-ID", nameField);
+                                        intent.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));
+                                        intent.putExtra("NAME", getIntent().getStringExtra("NAME"));
+
+                                        nests.document(nameField).update("birds", FieldValue.arrayUnion(getIntent().getStringExtra("EMAIL")));
 
                                         pd.dismiss();
                                         Toast.makeText(JoinNest.this, "Nest Matched", Toast.LENGTH_SHORT).show();
