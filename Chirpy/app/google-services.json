@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "405510477472",
+    "firebase_url": "https://chirpy-1249e.firebaseio.com",
+    "project_id": "chirpy-1249e",
+    "storage_bucket": "chirpy-1249e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:405510477472:android:4018e0ce7810c094765bc5",
+        "android_client_info": {
+          "package_name": "com.dream.chirpy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "405510477472-rts6evtv7fk442cjclqsknh70vsnhqdj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6d3wc7gi9FQUMOM5tzKk95u-QZP0oMFE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "405510477472-rts6evtv7fk442cjclqsknh70vsnhqdj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
